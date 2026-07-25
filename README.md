@@ -1,101 +1,147 @@
 # Zoom Clone
 
-A feature-rich video conferencing application built with modern web technologies, designed to provide a seamless communication experience similar to Zoom.
+A simple Zoom-like video conferencing application built with Node.js, Express, EJS, Socket.IO, and WebRTC concepts for real-time communication. It is designed as a learning project for understanding browser-based video meetings and real-time event handling.
 
 ## Features
 
-- 🎥 **Video Conferencing**: Real-time video and audio communication
-- 💬 **Chat**: Instant messaging during meetings
-- 🎤 **Audio Control**: Mute/unmute and volume control
-- 📹 **Video Control**: Enable/disable camera feed
-- 🔒 **Privacy**: End-to-end encrypted communications
-- 👥 **Multiple Participants**: Support for group meetings
-- 📱 **Responsive Design**: Works on desktop and mobile devices
+- Real-time meeting room interface
+- Video and audio communication support
+- In-meeting chat
+- Multiple participant support
+- Browser-based access with responsive UI
+- Real-time communication using sockets
 
 ## Tech Stack
 
-- **Frontend**: JavaScript
-- **License**: MIT
+- **Backend:** Node.js, Express
+- **Templating Engine:** EJS
+- **Realtime Communication:** Socket.IO
+- **Frontend:** JavaScript, HTML, CSS
+- **Package Management:** npm
 
-## Getting Started
+## Project Structure
 
-### Prerequisites
+```bash
+zoom-clone/
+├── public/           # Static assets
+├── views/            # EJS templates
+├── server.js         # Main server entry point
+├── package.json      # Dependencies and scripts
+├── package-lock.json
+├── plan.md
+├── LICENSE
+└── README.md
+```
 
-- Node.js (v14 or higher)
-- npm or yarn
+## Prerequisites
 
-### Installation
+Before running the project, make sure you have:
+
+- Node.js installed
+- npm installed
+
+## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Anik-Chaudhary/zoom-clone.git
 cd zoom-clone
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. Start the development server:
+## Run the Project
+
+Start the server with:
+
 ```bash
 npm start
-# or
-yarn start
 ```
 
-The application will open in your default browser at `http://localhost:3000`.
+If no start script is configured, run:
 
-## Project Structure
-
-```
-zoom-clone/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── utils/
-│   └── App.js
-├── public/
-├── package.json
-└── README.md
+```bash
+node server.js
 ```
 
-## Usage
+Then open your browser and visit:
 
-1. **Start a Meeting**: Click on "New Meeting" to create a new video conference
-2. **Join a Meeting**: Enter the meeting ID to join an existing conference
-3. **Share Controls**: Use the toolbar to control your camera, microphone, and other settings
-4. **Chat**: Send messages to other participants in the meeting
-5. **End Meeting**: Click "End" to terminate the conference
+```bash
+http://localhost:3000
+```
+
+## How It Works
+
+- Users open the app in a browser.
+- They join a meeting room.
+- Socket-based events handle real-time interaction between participants.
+- The UI is rendered using EJS templates and static frontend assets.
+
+## Available Files
+
+- `server.js` — Express server and application entry point
+- `views/` — Server-rendered EJS pages
+- `public/` — Client-side assets such as CSS, JavaScript, and media files
+- `package.json` — Project metadata and dependencies
+
+## Learning Purpose
+
+This project is useful for learning:
+
+- Real-time communication with Socket.IO
+- Video meeting architecture basics
+- Express server setup
+- EJS templating
+- Frontend and backend integration in Node.js apps
+
+## Roadmap
+
+Possible future improvements:
+
+- Authentication
+- Unique room generation
+- Screen sharing
+- Recording support
+- Better meeting controls
+- Deployment configuration
 
 ## Contributing
 
-We welcome contributions! Please follow these steps:
+Contributions are welcome.
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a new branch
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add your feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature/your-feature-name
+```
+
 5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Support
+## Author
 
-For support, please open an issue on the GitHub repository or contact the maintainers.
-
-## Roadmap
-
-- [ ] Screen sharing
-- [ ] Recording functionality
-- [ ] Virtual backgrounds
-- [ ] Meeting scheduling
-- [ ] User authentication
-- [ ] Meeting history and analytics
+Developed by [Anik-Chaudhary](https://github.com/Anik-Chaudhary)
 
 ## Acknowledgments
 
