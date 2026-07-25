@@ -99,4 +99,4 @@ For support, please open an issue on the GitHub repository or contact the mainta
 
 ## Acknowledgments
 
-This project was inspired by popular video conferencing platforms and aims to provide an open-source alternative for real-time communication.
+This project was built for learning WebRTC and real-time communication by following a YouTube tutorial and making modifications during the implementation.
