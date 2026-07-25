@@ -72,7 +72,7 @@ node server.js
 Then open your browser and visit:
 
 ```bash
-http://localhost:3000
+http://localhost:3030
 ```
 
 ## How It Works
